@@ -226,11 +226,14 @@ WHERE name IN ('shared_buffers', 'work_mem', 'maintenance_work_mem', 'effective_
 **บันทึกผลการทดลอง - Step 5:**
 
 ใส่ Screenshot ของ:
-1. ผลการรัน SELECT version(); <img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 150851" src="https://github.com/user-attachments/assets/9d7ff389-b66e-40b3-8050-9db6feb0df75" />
+1. ผลการรัน SELECT version();
+<img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 150851" src="https://github.com/user-attachments/assets/9d7ff389-b66e-40b3-8050-9db6feb0df75" />
 
-2. ผลการรัน SHOW shared_buffers; SHOW work_mem; SHOW maintenance_work_mem;SHOW effective_cache_size; <img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 150933" src="https://github.com/user-attachments/assets/ca56811b-b843-4b91-8cb9-33d276293188" />
+2. ผลการรัน SHOW shared_buffers; SHOW work_mem; SHOW maintenance_work_mem;SHOW effective_cache_size;
+<img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 150933" src="https://github.com/user-attachments/assets/ca56811b-b843-4b91-8cb9-33d276293188" />
 
-3. ผลการรัน \l <img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 151318" src="https://github.com/user-attachments/assets/d55b1c83-118a-467a-8e13-bb3dc2316bad" />
+3. ผลการรัน \l
+<img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 151318" src="https://github.com/user-attachments/assets/d55b1c83-118a-467a-8e13-bb3dc2316bad" />
 
 \du <img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 151331" src="https://github.com/user-attachments/assets/27324a87-018d-4646-bae7-099c7f93151a" />
 
@@ -633,8 +636,10 @@ INSERT INTO test_permissions (name) VALUES ('Test by lab_user'); -- ทำไม
 ใส่ Screenshot ของ:
 1. ผลการเชื่อมต่อด้วย lab_user
 <img width="540" height="182" alt="image" src="https://github.com/user-attachments/assets/795146d7-52ea-492c-9c14-3b0b6964c15a" />
+
 2. ผลการทดสอบสิทธิ์ต่างๆ
 <img width="398" height="70" alt="image" src="https://github.com/user-attachments/assets/feb54ad1-b114-4891-b060-296014a5b727" />
+
 3. ข้อความ error (ถ้ามี) เมื่อไม่มีสิทธิ์
 <img width="762" height="72" alt="image" src="https://github.com/user-attachments/assets/149c7e7c-fc4b-49d4-826e-0d954fca6df7" />
 
@@ -669,8 +674,10 @@ docker run --name postgres-backup-test \
 ใส่ Screenshot ของ:
 1. ผลการหยุดและเริ่ม Container
 <img width="887" height="47" alt="image" src="https://github.com/user-attachments/assets/3896718e-abd9-4234-92ad-7a6c2fe6321a" />
+
 2. ยืนยันว่าข้อมูลยังอยู่หลังจาก restart
 <img width="907" height="110" alt="image" src="https://github.com/user-attachments/assets/8e869a38-b8d7-46d8-88ff-77bde7585f7d" />
+
 3. ผลการสร้าง container พร้อม bind mount
 <img width="905" height="126" alt="image" src="https://github.com/user-attachments/assets/6cbd7e3d-48f0-48a9-8b32-3014afbfa179" />
 
@@ -694,6 +701,7 @@ docker volume inspect postgres-data
 **บันทึกผล Checkpoint 1:**
 ใส่ Screenshot ของ resource usage และ volume information ที่นี่
 <img width="1229" height="729" alt="สกรีนช็อต 2025-09-09 162648" src="https://github.com/user-attachments/assets/010e6bc3-fc7c-47fc-981d-1a5563fc750a" />
+
 <img width="996" height="468" alt="สกรีนช็อต 2025-09-09 162703" src="https://github.com/user-attachments/assets/5a4f680a-7190-4b48-a080-63ee3917a25e" />
 
 
@@ -743,11 +751,13 @@ WHERE state = 'active';
 **บันทึกผล Checkpoint 2:**
 ใส่ Screenshot ของ:
 1. Database statistics
-![Uploading สกรีนช็อต 2025-09-09 163027.png…]()
-2. Memory configuration
+<img width="1062" height="381" alt="สกรีนช็อต 2025-09-09 163027" src="https://github.com/user-attachments/assets/249e16ed-6268-4326-8fcc-eeb3295b462f" />
+
+3. Memory configuration
 <img width="998" height="450" alt="สกรีนช็อต 2025-09-09 163035" src="https://github.com/user-attachments/assets/cb17c680-b949-4be2-bfcd-b7878d42a411" />
-3. Active connections
-![Uploading สกรีนช็อต 2025-09-09 163035.png…]()
+
+4. Active connections
+<img width="777" height="284" alt="สกรีนช็อต 2025-09-09 163045" src="https://github.com/user-attachments/assets/a2189b55-fe80-4e5e-ab66-ac1a5da3a6f3" />
 
 ## การแก้ไขปัญหาเบื้องต้น
 
