@@ -79,9 +79,7 @@ docker run hello-world
 ```
 
 **บันทึกผลการทดลอง - การเตรียมความพร้อม:**
-```
-ใส่ Screenshot ของผลการรัน docker --version และ docker run hello-world ที่นี่
-```
+<img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 143109" src="https://github.com/user-attachments/assets/82c3b520-ed45-4d1d-9a7b-60ae98d6be5b" />
 
 ## ขั้นตอนการทดลอง
 
@@ -103,9 +101,8 @@ docker inspect postgres
 
 
 **บันทึกผลการทดลอง - Step 1:**
-```
-ใส่ Screenshot ของผลการรัน docker images ที่นี่
-```
+<img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 143602" src="https://github.com/user-attachments/assets/ec4e8473-de6d-4cf7-a337-0dc56a3ac70e" />
+
 
 ### Step 2: Create Docker Volume for Data Persistence
 
@@ -126,9 +123,8 @@ docker volume create postgres-config
 **คำอธิบาย**: Docker Volume จะทำให้ข้อมูลคงอยู่แม้ Container จะถูกลบ
 
 **บันทึกผลการทดลอง - Step 2:**
-```
-ใส่ Screenshot ของผลการรัน docker volume ls และ docker volume inspect postgres-data ที่นี่
-```
+<img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 143958" src="https://github.com/user-attachments/assets/25311d75-9e73-4c80-bac1-e9429c29c9fc" />
+
 
 ### Step 3: Create PostgreSQL Container with Volume
 
@@ -160,9 +156,8 @@ docker run --name postgres-lab \
 - `-c shared_buffers=256MB`: กำหนด shared buffers
 
 **บันทึกผลการทดลอง - Step 3:**
-```
-ใส่ Screenshot ของผลการรัน docker run ที่นี่
-```
+<img width="927" height="129" alt="สกรีนช็อต 2025-09-09 144528" src="https://github.com/user-attachments/assets/f0e8fd8b-5df4-4732-829c-882496ca694c" />
+
 
 ### Step 4: Verify Container Status and Resource Usage
 
@@ -181,12 +176,15 @@ docker volume inspect postgres-data
 ```
 
 **บันทึกผลการทดลอง - Step 4:**
-```
-ใส่ Screenshot ของ:
+
 1. ผลการรัน docker ps
+<img width="918" height="139" alt="สกรีนช็อต 2025-09-09 144915" src="https://github.com/user-attachments/assets/88076d6d-06ef-43b2-91f2-10f8b84ee691" />
+
 2. ส่วนหนึ่งของ docker logs postgres-lab
+<img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 145050" src="https://github.com/user-attachments/assets/0a21a75e-e6ba-4174-8ad1-95f4534a8e30" />
+
 3. ผลการรัน docker stats
-```
+<img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 145158" src="https://github.com/user-attachments/assets/3fe40055-f73e-49cc-b056-eda2c64d185f" />
 
 ### Step 5: Connect to PostgreSQL และตรวจสอบ Configuration
 
@@ -226,12 +224,17 @@ WHERE name IN ('shared_buffers', 'work_mem', 'maintenance_work_mem', 'effective_
 ```
 
 **บันทึกผลการทดลอง - Step 5:**
-```
+
 ใส่ Screenshot ของ:
-1. ผลการรัน SELECT version();
-2. ผลการรัน SHOW shared_buffers; SHOW work_mem; SHOW maintenance_work_mem;SHOW effective_cache_size;
-3. ผลการรัน \l และ \du
-```
+1. ผลการรัน SELECT version(); <img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 150851" src="https://github.com/user-attachments/assets/9d7ff389-b66e-40b3-8050-9db6feb0df75" />
+
+2. ผลการรัน SHOW shared_buffers; SHOW work_mem; SHOW maintenance_work_mem;SHOW effective_cache_size; <img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 150933" src="https://github.com/user-attachments/assets/ca56811b-b843-4b91-8cb9-33d276293188" />
+
+3. ผลการรัน \l <img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 151318" src="https://github.com/user-attachments/assets/d55b1c83-118a-467a-8e13-bb3dc2316bad" />
+
+\du <img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 151331" src="https://github.com/user-attachments/assets/27324a87-018d-4646-bae7-099c7f93151a" />
+
+
 
 ### Step 6: Database Management Operations
 
@@ -270,12 +273,13 @@ WHERE datname = 'lab_db';
 ```
 
 **บันทึกผลการทดลอง - Step 6:**
-```
 ใส่ Screenshot ของ:
-1. ผลการสร้าง lab_db
-2. ผลการรัน \l+ แสดงฐานข้อมูลทั้งหมด
-3. ผลการ query ข้อมูลฐานข้อมูล
-```
+1. ผลการสร้าง lab_db <img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 151318" src="https://github.com/user-attachments/assets/223fe8e0-e024-4f90-aae0-70667abe4a1c" />
+
+2. ผลการรัน \l+ แสดงฐานข้อมูลทั้งหมด <img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 151331" src="https://github.com/user-attachments/assets/ebab8f72-a29b-49e6-b106-e60b8ef9f417" />
+
+3. ผลการ query ข้อมูลฐานข้อมูล <img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 151331" src="https://github.com/user-attachments/assets/89a42961-6d9a-476d-91d2-5c95b599125d" />
+
 
 ### Step 7: User และ Role Management
 
@@ -328,12 +332,13 @@ WHERE r.rolname NOT LIKE 'pg_%';
 ```
 
 **บันทึกผลการทดลอง - Step 7:**
-```
 ใส่ Screenshot ของ:
-1. ผลการสร้าง users ทั้งหมด
-2. ผลการรัน \du+
-3. ผลการ query pg_roles
-```
+1. ผลการสร้าง users ทั้งหมด <img width="925" height="585" alt="image" src="https://github.com/user-attachments/assets/ff85ba5d-b94f-4b63-a11a-a30f3661049f" />
+
+2. ผลการรัน \du+ <img width="828" height="230" alt="image" src="https://github.com/user-attachments/assets/01abc8fc-9c89-4d3a-8bb3-9b9d1d75a951" />
+
+3. ผลการ query pg_roles <img width="1920" height="1020" alt="สกรีนช็อต 2025-09-09 152242" src="https://github.com/user-attachments/assets/3ff33149-f1bc-4915-9bfa-7b9c1b90d99c" />
+
 
 ### Step 8: การจัดการสิทธิ์ User
 
@@ -390,17 +395,26 @@ GRANT SELECT ON postgres_test_table TO lab_user;
 ```
 
 **บันทึกผลการทดลอง - Step 8:**
-```
 ใส่ Screenshot ของ:
-1. ผลการ ALTER USER commands
-2. ผลการรัน \dp test_permissions
-3. ผลการ GRANT commands
-```
+1. ผลการ ALTER USER commands <img width="568" height="101" alt="image" src="https://github.com/user-attachments/assets/dd9e22a4-f857-45a3-bbb6-b54df9c9bfd1" />
+2. ผลการรัน \dp test_permissions <img width="916" height="190" alt="image" src="https://github.com/user-attachments/assets/e0f4c169-6ff1-4832-95bc-6372ac73b9b9" />
+3. ผลการ GRANT commands <img width="547" height="78" alt="image" src="https://github.com/user-attachments/assets/3e66988c-c937-490c-8643-81af0bca6f42" />
+
 **คำถาม
  ```
 Access Privileges   postgres=arwdDxtm/postgres มีความหมายอย่างไร
-
-
+postgres (user) มีสิทธิ์บน object นั้น
+arwdDxtm = สิทธิ์ทั้งหมด
+a = INSERT
+r = SELECT
+w = UPDATE
+d = DELETE
+D = TRUNCATE
+x = REFERENCES
+t = TRIGGER
+m = RULE (หรือสิทธิ์พิเศษเพิ่มเติม)
+/postgres = grantor คือ user postgres
+แปลว่า user postgres มีสิทธิ์เต็มที่บน object
  ```
 ### Step 9: Schema Management และ Namespace
 
