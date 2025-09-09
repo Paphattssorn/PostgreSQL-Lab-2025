@@ -396,9 +396,14 @@ GRANT SELECT ON postgres_test_table TO lab_user;
 
 **บันทึกผลการทดลอง - Step 8:**
 ใส่ Screenshot ของ:
-1. ผลการ ALTER USER commands <img width="568" height="101" alt="image" src="https://github.com/user-attachments/assets/dd9e22a4-f857-45a3-bbb6-b54df9c9bfd1" />
-2. ผลการรัน \dp test_permissions <img width="916" height="190" alt="image" src="https://github.com/user-attachments/assets/e0f4c169-6ff1-4832-95bc-6372ac73b9b9" />
-3. ผลการ GRANT commands <img width="547" height="78" alt="image" src="https://github.com/user-attachments/assets/3e66988c-c937-490c-8643-81af0bca6f42" />
+1. ผลการ ALTER USER commands
+<img width="568" height="101" alt="image" src="https://github.com/user-attachments/assets/dd9e22a4-f857-45a3-bbb6-b54df9c9bfd1" />
+
+2. ผลการรัน \dp test_permissions
+<img width="916" height="190" alt="image" src="https://github.com/user-attachments/assets/e0f4c169-6ff1-4832-95bc-6372ac73b9b9" />
+
+3. ผลการ GRANT commands
+<img width="547" height="78" alt="image" src="https://github.com/user-attachments/assets/3e66988c-c937-490c-8643-81af0bca6f42" />
 
 **คำถาม
  ```
@@ -516,10 +521,17 @@ INSERT INTO hr.employee_orders (employee_id, customer_id, order_date, commission
 
 **บันทึกผลการทดลอง - Step 9:**
 ใส่ Screenshot ของ:
-1. ผลการสร้าง schemas (\dn+) <img width="927" height="547" alt="image" src="https://github.com/user-attachments/assets/0d7647c9-7d42-435e-9e0c-debae326d74e" />
-2. ผลการสร้างตารางในแต่ละ schema <img width="642" height="831" alt="image" src="https://github.com/user-attachments/assets/ec112dc6-8f25-45f9-b9a3-17fa12facfca" />
-3. ผลการใส่ข้อมูลและ query ข้อมูล <img width="807" height="549" alt="image" src="https://github.com/user-attachments/assets/80a1fb6b-e496-4511-8bff-dda65048308c" />
-4. ข้อมูลในตาราง employee_orders ที่จะใช้สำหรับ JOIN ข้าม schema <img width="913" height="361" alt="image" src="https://github.com/user-attachments/assets/107920e1-f432-4237-8bd0-154b193ea552" />
+1. ผลการสร้าง schemas (\dn+)
+<img width="927" height="547" alt="image" src="https://github.com/user-attachments/assets/0d7647c9-7d42-435e-9e0c-debae326d74e" />
+
+2. ผลการสร้างตารางในแต่ละ schema
+<img width="642" height="831" alt="image" src="https://github.com/user-attachments/assets/ec112dc6-8f25-45f9-b9a3-17fa12facfca" />
+
+3. ผลการใส่ข้อมูลและ query ข้อมูล
+<img width="807" height="549" alt="image" src="https://github.com/user-attachments/assets/80a1fb6b-e496-4511-8bff-dda65048308c" />
+
+4. ข้อมูลในตาราง employee_orders ที่จะใช้สำหรับ JOIN ข้าม schema
+<img width="913" height="361" alt="image" src="https://github.com/user-attachments/assets/107920e1-f432-4237-8bd0-154b193ea552" />
 
 ### Step 10: ทดสอบการเข้าถึง Schema และ Search Path
 
