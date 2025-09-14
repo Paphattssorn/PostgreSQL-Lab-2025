@@ -1008,7 +1008,7 @@ INSERT INTO ecommerce.order_items (order_id, product_id, quantity, price) VALUES
 ```
 
 **ผลการทำแบบฝึกหัด 3:**
-```
+
 ใส่ Screenshot ของ:
 1. โครงสร้าง schemas และ tables (\dn+, \dt ecommerce.*)
 <img width="915" height="468" alt="image" src="https://github.com/user-attachments/assets/0f89b0df-01af-4517-b792-b9749738aef5" />
@@ -1023,7 +1023,6 @@ INSERT INTO ecommerce.order_items (order_id, product_id, quantity, price) VALUES
 Query 7.1  สินค้าอะไรขายดีสุด (Football หรือ T-Shirt)
 
 Query 7.2 หมวดหมู่ไหนทำรายได้มากที่สุด (Electronics)
-```
 
 
 ## การทดสอบความเข้าใจ
