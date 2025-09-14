@@ -812,17 +812,20 @@ docker volume create postgres-data
 - Volume: `multi-postgres-data`
 
 ```bash
-# พื้นที่สำหรับคำตอบ - เขียน command ที่ใช้
-
+docker run -d --name multi-postgres -e POSTGRES_PASSWORD=multipass123 -p 5434:5432 --memory="1536m" --cpus="1.5" -v multi-postgres-data:/var/lib/postgresql/data postgres
 ```
 
 **ผลการทำแบบฝึกหัด 1:**
-```
+
 ใส่ Screenshot ของ:
 1. คำสั่งที่ใช้สร้าง container
+<img width="955" height="85" alt="image" src="https://github.com/user-attachments/assets/77d3de5f-c279-4cd3-90d6-6f27404800a3" />
+
 2. docker ps แสดง container ใหม่
+<img width="957" height="243" alt="image" src="https://github.com/user-attachments/assets/59ec854d-3630-43f7-8128-f62320afc52d" />
+
 3. docker stats แสดงการใช้ resources
-```
+<img width="840" height="45" alt="image" src="https://github.com/user-attachments/assets/a6231d94-fb00-4e0f-9eff-976ff7def0aa" />
 
 ### แบบฝึกหัด 2: User Management และ Security
 **คำสั่ง**: สร้างระบบผู้ใช้ที่สมบูรณ์:
@@ -838,17 +841,25 @@ docker volume create postgres-data
    - `admin_user` (รหัสผ่าน: `admin123`) - เป็นสมาชิกของ db_admins
 
 ```sql
--- พื้นที่สำหรับคำตอบ - เขียน SQL commands ที่ใช้
+
 
 ```
 
 **ผลการทำแบบฝึกหัด 2:**
-```
+
 ใส่ Screenshot ของ:
-1. การสร้าง roles และ users
+1. การสร้าง roles และ users 
+<img width="618" height="514" alt="image" src="https://github.com/user-attachments/assets/a31115c4-2ba3-4639-b0ee-cdcea6ac7b8d" />
+
 2. ผลการรัน \du แสดงผู้ใช้ทั้งหมด
+<img width="811" height="253" alt="image" src="https://github.com/user-attachments/assets/48661bcb-68d0-47ec-b086-091d170731b7" />
+
 3. ผลการทดสอบเชื่อมต่อด้วย user ต่างๆ
-```
+<img width="978" height="173" alt="image" src="https://github.com/user-attachments/assets/c1cbc558-148e-4b42-82f2-ef6e16c91d63" />
+
+<img width="955" height="189" alt="image" src="https://github.com/user-attachments/assets/47fdeea1-7e9a-4a58-ae83-8807d66bb6bd" />
+
+<img width="955" height="169" alt="image" src="https://github.com/user-attachments/assets/a2ecadec-cfbd-4bc1-8f8b-431b6c84eeee" />
 
 ### แบบฝึกหัด 3: Schema Design และ Complex Queries
 **คำสั่ง**: สร้างระบบฐานข้อมูลร้านค้าออนไลน์:
@@ -1000,9 +1011,18 @@ INSERT INTO ecommerce.order_items (order_id, product_id, quantity, price) VALUES
 ```
 ใส่ Screenshot ของ:
 1. โครงสร้าง schemas และ tables (\dn+, \dt ecommerce.*)
+<img width="915" height="468" alt="image" src="https://github.com/user-attachments/assets/0f89b0df-01af-4517-b792-b9749738aef5" />
+
 2. ข้อมูลตัวอย่างในตารางต่างๆ
+<img width="962" height="572" alt="image" src="https://github.com/user-attachments/assets/59373e2b-34d8-4943-82fa-4336bc56405e" />
+
 3. ผลการรัน queries ที่สร้าง
+<img width="964" height="795" alt="image" src="https://github.com/user-attachments/assets/ccae5af3-fcae-4327-a071-aa6aa07c5d1e" />
+
 4. การวิเคราะห์ข้อมูลที่ได้
+Query 7.1  สินค้าอะไรขายดีสุด (Football หรือ T-Shirt)
+
+Query 7.2 หมวดหมู่ไหนทำรายได้มากที่สุด (Electronics)
 ```
 
 
